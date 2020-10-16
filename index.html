@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="firstPage.css">
+</head>
+<body style="background-color:#003e7e">
+
+<img class = "center" src="images/Villanova.png" alt="Villanova">
+<h1> CTS Loan Tracker</h1>
+<p>Created by Lucas Deane</p>
+
+<div class="container">
+    <form id="loginForm" method="post", action="authen_login.php">
+        <label for="uname"><b>Username: </b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required> <br />
+
+        <label for="psw"><b>Password: </b></label>
+        <input class="password" type="password" placeholder="Enter Password" name="psw" required> <br />
+
+        <button class="loginButton" type="submit">Login</button>
+    </form>
+    <p>Click to request equipment.</p>
+    <button onclick="window.location.href='professorSheet.php'" class="requestButton" href="professorSheet.php">Request Loan</button>
+  </div>
+
+</body>
+</html>
